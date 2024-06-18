@@ -1,14 +1,75 @@
-.jumbotron{
-    padding-top: 6rem;
-    background-color: #e2edff;
+* {
+    font-family: 'Poppins', sans-serif;
 }
+.jumbotron{
+    height: 100vh;
+    padding-top: 6rem;
+    background-color: #081b29;
+}
+
 section{
     padding-top: 5rem;
 }
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.brand-shiro {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.brand-neko {
+    color: aqua;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.nav-link.active {
+    color: #22dcb3 !important;
+}
+
+.nav-link:hover {
+    color: #22dcb3;
+}
+.glow-effect {
+    box-shadow: 0 0 15px 5px rgba(34, 220, 179, 0.5); /* Mengatur efek glow */
+    border-color: #22dcb3; /* Mengganti warna border */
+}
+
+.display-4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.lead{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.d-flex{
+    padding: 5px;
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(196, 195, 195);
+    width: 200px;
+    justify-content: center;
+}
+.carousel-img {
+    max-height: 80vh; /* Ubah nilai ini sesuai kebutuhan */
+    object-fit: contain;
+  }
 .gallery-img{
     width: 100%;
     
 }
 #gallery .row > * {
     padding: 0;
+}
+@media (min-width: 768px) {
+    .profile-content {
+        margin-top: 20px; /* Sesuaikan dengan kebutuhan Anda */
+    }
 }
