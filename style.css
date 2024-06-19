@@ -6,6 +6,9 @@
     padding-top: 6rem;
     background-color: #081b29;
 }
+.navbar-awal{
+    background: transparent;
+}
 
 section{
     padding-top: 5rem;
@@ -74,6 +77,9 @@ section{
     padding: 0;
 }
 @media (max-width: 767.98px) {
+    .navbar-awal {
+        background-color: #071e2e !important;
+    }
     .social-media-spacing {
       margin-bottom: 2rem; /* Sesuaikan nilai margin sesuai kebutuhan */
       
@@ -96,6 +102,16 @@ section{
     .social-media h3 {
         font-size: 17px;
 
+    }
+    .carousel-control-prev-icon{
+        color: black;
+        background-color: black;
+        opacity: 100;
+    }
+    .carousel-control-next-icon{
+        color: black;
+        background-color: black;
+        opacity: 100;
     }
 
   }
