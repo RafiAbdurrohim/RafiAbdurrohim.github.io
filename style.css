@@ -87,6 +87,7 @@ section{
     .my-foto {
         margin: 1px auto;
         justify-content: center;
+        transform: translateY(-30px);
         width: 28vh;
     }
     .display-4 {
@@ -97,7 +98,7 @@ section{
         
     }
     .text-start {
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
     .lead{
         font-family: "Poppins", sans-serif;
