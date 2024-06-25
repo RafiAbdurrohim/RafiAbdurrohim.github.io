@@ -201,40 +201,40 @@ section{
 
 .chat-input {
     display: flex;
-    padding: 10px;
+    padding: 5px;
     background-color: #0d3958;
+    align-items: center;
 }
 
 .chat-input input {
     flex-grow: 1;
-    padding: 8px 12px;
+    padding: 6px 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #0a2d47;
     color: white;
-    margin-right: 8px;
+    font-size: 14px;
+    margin-right: 5px;
+    min-width: 0; /* Ini penting untuk flexbox */
 }
 
 .chat-input button {
     background-color: #22dcb3;
     color: #081b29;
     border: none;
-    width: 36px;
-    height: 36px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-.chat-input button:hover {
-    background-color: #1fc69f;
+    flex-shrink: 0; /* Mencegah tombol mengecil */
 }
 
 .chat-input button i {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 #close-chat {
@@ -274,16 +274,27 @@ section{
         font-size: 12px;
     }
     .chatbox {
-        width: 280px;
-        height: 350px;
+        width: 60%; /* Atau ukuran yang sesuai */
+        height: 40%;
+        
     }
+
+    .chat-input {
+        padding: 3px;
+    }
+
+    .chat-input input {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
     .chat-input button {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
-    
+
     .chat-input button i {
-        font-size: 16px;
+        font-size: 12px;
     }
       .text-social {
         font-size: 20px !important;
