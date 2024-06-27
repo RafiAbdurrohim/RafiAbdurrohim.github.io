@@ -251,46 +251,71 @@
         ></path>
       </svg>
     </section>
+
+    <!-- AI asisten -->
+
     <div id="chat-icon"  class="chat-icon">
       <i class="bi bi-chat-dots-fill"></i>
       <span>Ask AI</span>
   </div>
   <div id="chatbox" class="chatbox">
-      <div class="chat-header">
-          <h5>AI Assistant</h5>
-          <button id="close-chat">&times;</button>
-      </div>
-      <div id="chat-messages" class="chat-messages"></div>
-      <div class="chat-input">
+    <div class="chat-header">
+        <h5>Shiro AI</h5>
+        <button id="close-chat">&times;</button>
+    </div>
+    <div id="chat-messages" class="chat-messages"></div>
+    <div id="question-templates" class="question-templates">
+        <button class="template-btn">Siapa kamu?</button>
+        <button class="template-btn">Apa keahlian Rafi?</button>
+        <button class="template-btn">Proyek apa yang pernah dibuat Rafi?</button>
+        <button class="template-btn">Bagaimana cara menghubungi Rafi?</button>
+    </div>
+    <div class="chat-input">
         <input type="text" id="user-input" placeholder="Type your message...">
         <button id="send-message" aria-label="Send message">
             <i class="bi bi-send-fill"></i>
         </button>
     </div>
-  </div>
-    <!-- akhir contact -->
+</div>
+    <!-- akhir Ai -->
 
     <!-- footter -->
     <footer class="bg-primary text-white text-center pb-5">
       <p>created with <i class="bi bi-heart-fill text-danger"></i> by <a class="text-white fw-bold" href="https://www.instagram.com/rafiabdrrhm/">Rafi Abdurrohim</a></p>
     </footer>
-
+    
     <!-- script JS -->
      <script>
-      document.addEventListener('DOMContentLoaded', function() {
+     document.addEventListener('DOMContentLoaded', function() {
   const chatIcon = document.getElementById('chat-icon');
   const chatbox = document.getElementById('chatbox');
   const closeChat = document.getElementById('close-chat');
   const sendMessage = document.getElementById('send-message');
   const userInput = document.getElementById('user-input');
   const chatMessages = document.getElementById('chat-messages');
+  const questionTemplates = document.getElementById('question-templates');
+
+  const responses = {
+    "halo": "Halo! Saya adalah AI asisten untuk portofolio Rafi Abdurrohim. Ada yang bisa saya bantu?",
+    "siapa kamu": "Saya adalah AI asisten yang dibuat untuk membantu pengunjung mengenal Rafi Abdurrohim lebih baik.",
+    "apa keahlian rafi": "Rafi memiliki keahlian dalam FrontEnd, BackEnd, dan CyberSecurity.",
+    "proyek apa yang pernah dibuat rafi": "Rafi telah membuat beberapa proyek, termasuk halaman login responsif, portal admin konseling, dan website konseling siswa.",
+    "bagaimana cara menghubungi rafi": "Anda dapat menghubungi Rafi melalui Instagram @rafiabdrrhm atau LinkedIn-nya.",
+    "default": "Maaf, saya tidak memiliki informasi tentang itu. Apakah ada hal lain yang ingin Anda tanyakan tentang Rafi?"
+  };
 
   chatIcon.addEventListener('click', function() {
     chatbox.style.display = 'flex';
+    questionTemplates.style.display = 'flex';
+    // Tambahkan pesan pembuka AI
+    setTimeout(() => {
+      addMessage('ai', "Halo! Saya adalah AI asisten yang dibuat oleh master Rafi. Silakan tanyakan tentang master saya atau pilih salah satu pertanyaan di bawah.");
+    }, 500);
   });
 
   closeChat.addEventListener('click', function() {
     chatbox.style.display = 'none';
+    questionTemplates.style.display = 'none';
   });
 
   sendMessage.addEventListener('click', sendUserMessage);
@@ -300,15 +325,35 @@
     }
   });
 
+  // Menangani klik template pertanyaan
+  questionTemplates.addEventListener('click', function(e) {
+    if (e.target.classList.contains('template-btn')) {
+      userInput.value = e.target.textContent;
+      sendUserMessage();
+    }
+  });
+
   function sendUserMessage() {
-    const message = userInput.value.trim();
+    const message = userInput.value.trim().toLowerCase();
     if (message) {
       addMessage('user', message);
       userInput.value = '';
-      // Simulate AI response
+      
+      let response = responses[message] || responses.default;
+      
+      // Untuk pencocokan yang lebih fleksibel
+      if (response === responses.default) {
+        for (let key in responses) {
+          if (message.includes(key)) {
+            response = responses[key];
+            break;
+          }
+        }
+      }
+      
       setTimeout(() => {
-        addMessage('ai', 'Coming Soon brok, tunggu update selanjutnya');
-      }, 1000);
+        addMessage('ai', response);
+      }, 500);
     }
   }
 
