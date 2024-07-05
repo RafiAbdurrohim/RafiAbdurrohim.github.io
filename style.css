@@ -6,6 +6,9 @@
     padding-top: 6rem;
     background-color: #081b29;
 }
+.jumbotron h1 {
+    margin-top: 130px;
+}
 .navbar-awal{
     background: transparent;
 }
@@ -57,6 +60,8 @@ section{
 .test{
     font-size: 14px;
 }
+
+
 .d-flex{
     padding: 5px;
     display: flex;
@@ -64,6 +69,7 @@ section{
     background-color: rgb(196, 195, 195);
     width: 200px;
     justify-content: center;
+    
 }
 .carousel-img {
     max-height: 80vh; /* Ubah nilai ini sesuai kebutuhan */
@@ -324,6 +330,9 @@ section{
     .social-media-spacing {
       margin-bottom: 2rem; /* Sesuaikan nilai margin sesuai kebutuhan */
       
+    }
+    .jumbotron h1{
+        margin-top: 10px
     }
     .my-foto {
         margin: 1px auto;
