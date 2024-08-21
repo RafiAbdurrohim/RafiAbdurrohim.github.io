@@ -116,8 +116,6 @@
 
     <!-- project -->
     <section id="project" style="background-color: #082539; color: white" data-aos="fade-up">
-      <!-- three.js -->
-      <!-- <div id="three-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div> -->
       <div class="container p-5">
         <div class="row text-center mb-5">
           <div class="col">
@@ -167,18 +165,12 @@
             </div>
           </div>
 
-          <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="900">
-            <div class="card">
-              <img src="img/project/siswa.png" class="card-img-top" alt="..." data-aos="flip-right" data-aos-duration="1000" data-aos-delay="1000"/>
-              <div class="card-body" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1100">
-                <p class="card-text">Displaying the student complaint submission page, facilitating easy reporting of issues.</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
     <!-- akhir project -->
+     
 
     <!-- certificate -->
     <section id="certificate" style="background-color: #081b29; color: white; height: 100vh; display: flex; align-items: center" data-aos="fade-up"  data-aos-duration="800">
@@ -287,33 +279,82 @@
     <!-- akhir Ai -->
 
     <!-- footter -->
-    <footer class="bg-primary text-white text-center py-4">
+    <footer class="footer-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h5>Rafi Abdurrohim</h5>
-            <p>WebDev | BlockchainDev | CyberSecurity</p>
-          </div>
-          <div class="col-md-4">
-            <h5>Quick Links</h5>
-            <ul class="list-unstyled">
-              <li><a href="#Home" class="text-white">Home</a></li>
-              <li><a href="#project" class="text-white">Projects</a></li>
-              <li><a href="#certificate" class="text-white">Certificates</a></li>
-              <li><a href="#contact" class="text-white">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h5>Connect</h5>
-            <a href="https://www.instagram.com/rafiabdrrhm/" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.tiktok.com/@kuro.moba" class="text-white me-3"><i class="bi bi-tiktok"></i></a>
-            <a href="https://www.linkedin.com/in/rafi-abdurrohim-b352a2304/" class="text-white"><i class="bi bi-linkedin"></i></a>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><span class="brand-shiro">Shiro</span><span class="brand-neko">Neko</span></a>
+                </div>
+                <div class="footer-text">
+                  <p>WebDev | BlockchainDev | CyberSecurity</p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow me</span>
+                  <a href="https://www.instagram.com/rafiabdrrhm/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.tiktok.com/@kuro.moba"><i class="bi bi-tiktok"></i></a>
+                  <a href="https://www.linkedin.com/in/rafi-abdurrohim-b352a2304/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#Home">Home</a></li>
+                  <li><a href="#project">Projects</a></li>
+                  <li><a href="#certificate">Certificates</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Get in Touch</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>Don't miss to follow me on social media platforms.</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="bi bi-send-fill"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <hr>
-        <p class="mb-0">Created with <i class="bi bi-heart-fill text-danger"></i> by <a class="text-white fw-bold" href="https://www.instagram.com/rafiabdrrhm/">Rafi Abdurrohim</a></p>
       </div>
-    </footer>    
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/rafiabdrrhm/">Rafi Abdurrohim</a></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#Home">Home</a></li>
+                  <li><a href="#project">Projects</a></li>
+                  <li><a href="#certificate">Certificates</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+    
     
     <!-- script JS -->
      <!-- particle.js -->
@@ -346,42 +387,7 @@
       });
     </script>
 
-    <!-- threee.js -->
-    <script>
-      let scene, camera, renderer, cube;
-    
-      function init() {
-        scene = new THREE.Scene();
-        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        renderer = new THREE.WebGLRenderer({ alpha: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.getElementById('three-container').appendChild(renderer.domElement);
-    
-        const geometry = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00, wireframe: true });
-        cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-    
-        camera.position.z = 5;
-    
-        animate();
-      }
-    
-      function animate() {
-        requestAnimationFrame(animate);
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.01;
-        renderer.render(scene, camera);
-      }
-    
-      window.addEventListener('resize', function() {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-      });
-    
-      init();
-    </script>
+   
      <!-- vanta.js -->
      <script>
       VANTA.NET({
