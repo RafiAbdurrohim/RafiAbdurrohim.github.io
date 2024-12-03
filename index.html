@@ -33,9 +33,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#Home">Home</a>
             </li>
-            <!-- <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#project">Project</a>
             </li>
@@ -88,30 +88,98 @@
     <!-- akhir jumbotron -->
 
     <!-- about -->
-    <!-- <section id="about">
+    <!-- about section -->
+    <section id="about" class="py-5 bg-dark text-light position-relative overflow-hidden">
       <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About Me</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <div class="about-content">
+              <h2 class="display-6 mb-4" style="color: white">About Me</h2>
+              
+              <div class="skill-chips mb-4">
+                <span class="badge bg-primary me-2 mb-2">Web Development</span>
+                <span class="badge bg-info me-2 mb-2">Cyber Security</span>
+                <span class="badge bg-success me-2 mb-2">IoT</span>
+                <span class="badge bg-warning me-2 mb-2">Blockchain</span>
+              </div>
+    
+              <div class="personal-intro">
+                <p class=" mb-3 text-white" style="line-height: 1.6; color: #e0e0e0 !important;">
+                  I'm Rafi Abdurrohim, a passionate Information Technology student at Politeknik Negeri Samarinda, driven by an insatiable curiosity for cutting-edge technologies.
+                </p>
+                
+                <div class="key-strengths">
+                  <div class="strength mb-3">
+                    <h5 class="text-primary"><i class="bi bi-code-slash me-2"></i>Technical Expertise</h5>
+                    <p class="text-light" style="color: #c0c0c0 !important; line-height: 1.5;">
+                      Advanced skills in web development, with a strong focus on creating responsive and innovative digital solutions.
+                    </p>
+                  </div>
+                  
+                  <div class="strength mb-3">
+                    <h5 class="text-primary"><i class="bi bi-graph-up me-2"></i>Continuous Learning</h5>
+                    <p class="text-light" style="color: #c0c0c0 !important; line-height: 1.5;">
+                      Constantly exploring emerging technologies and expanding my skill set to stay ahead in the rapidly evolving tech landscape.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4" data-aos="fade-right" data-aos-offset="250">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, reiciendis nisi laboriosam voluptatum amet similique suscipit commodi distinctio dolorum soluta!</p>
-          </div>
-          <div class="col-md-4" data-aos="fade-left" data-aos-offset="250" data-aos-delay="200">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis laudantium eius accusantium! Saepe, omnis qui! Aspernatur fugiat unde blanditiis veritatis deserunt quis accusamus, alias voluptatibus.</p>
+          
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="tech-visual-container position-relative">
+              <div class="tech-card card bg-secondary bg-opacity-10 border-primary mb-3">
+                <div class="card-body">
+                  <h5 class="card-title text-primary mb-3">Tech Stack</h5>
+                  <div class="row">
+                    <div class="col-4 text-center mb-3">
+                      <i class="bi bi-filetype-html fs-2 text-danger"></i>
+                      <p class="small mt-2 text-light">HTML</p>
+                    </div>
+                    <div class="col-4 text-center mb-3">
+                      <i class="bi bi-filetype-css fs-2 text-primary"></i>
+                      <p class="small mt-2 text-light">CSS</p>
+                    </div>
+                    <div class="col-4 text-center mb-3">
+                      <i class="bi bi-filetype-js fs-2 text-warning"></i>
+                      <p class="small mt-2 text-light">JavaScript</p>
+                    </div>
+                    <div class="col-4 text-center">
+                      <i class="bi bi-bootstrap fs-2 text-purple" style="color: purple !important"></i>
+                      <p class="small mt-2 text-light">Bootstrap</p>
+                    </div>
+                    <div class="col-4 text-center">
+                      <i class="bi bi-shield-lock fs-2 text-success"></i>
+                      <p class="small mt-2 text-light">Security</p>
+                    </div>
+                    <div class="col-4 text-center">
+                      <i class="bi bi-hexagon fs-2 text-info"></i>
+                      <p class="small mt-2 text-light">Blockchain</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="coding-quote card bg-secondary bg-opacity-10 border-info">
+                <div class="card-body">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0 fst-italic text-light">
+                      "Technology is best when it brings people together."
+                    </p>
+                    <footer class="blockquote-footer text-muted">- Matt Mullenweg</footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,32L26.7,48C53.3,64,107,96,160,122.7C213.3,149,267,171,320,154.7C373.3,139,427,85,480,80C533.3,75,587,117,640,117.3C693.3,117,747,75,800,85.3C853.3,96,907,160,960,170.7C1013.3,181,1067,139,1120,122.7C1173.3,107,1227,117,1280,112C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-        ></path>
-      </svg>
-    </section> -->
+      
+      <div class="bg-overlay position-absolute top-0 start-0 w-100 h-100" 
+           style="background: linear-gradient(135deg, rgba(8,27,41,0.9), rgba(12,41,61,0.7)); z-index: -1;">
+      </div>
+    </section>
     <!-- akhir about -->
 
     <!-- project -->
